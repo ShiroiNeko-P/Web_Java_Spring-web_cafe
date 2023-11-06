@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+    <h1>Trang tích điểm</h1>
+   <table th:if="${sp!= null}">
+        <tr th:each="sp : ${sp}">
+            <td th:text="${sp.ten}"></td>
+        </tr>
+    </table>
+</body>
+</html>
